@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    color: #fff;
+    justify-content: center;
+    padding: 16px;
+}
+
+form input{
+    display: flex;
+    margin: 0 auto;
+}
+
+form label{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    padding: 16px;
+}
+
+button{
+    margin: 0 auto;
+    display: block;
+    margin-top: 8px;
+    padding: 8px;
+    width: 140px;
+    background: rgb(36, 207, 36);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+}
