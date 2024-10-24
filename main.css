@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+header {
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+}
+
+body,
+input,
+textarea{
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+header,
+section h2,
+section h3,
+form button{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img{
+    height: 24px;
+}
+
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section{
+    color: #182C61;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.store-front{
+    height: 540px;
+    padding-right: 32px ;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact .container{
+    display: block;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #2a4ca8;
+}
+
+input:focus, textarea:focus{
+    outline-color: #182C61;
+}
+
+footer{
+    background-color: #182C61;
+    color: #ecf0f1;
+    padding: 16px;
+}
+
+.tenis img{
+    height: 180px;
+}
+
+.nossos{
+    margin: 0 auto;
+    max-width: 1280px;
+    margin-bottom: 24px;
+}
+
+.tenis ul{
+    display: flex;
+    list-style: none;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.tenis p{
+    color: black;
+    max-width: 90%;
+}
+
+.tenis button{
+    background-color: #182C61;
+    color: #ecf0f1;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tenis button:hover{
+    background-color: #2a4ca8;
+}
+
+@media screen and (max-width: 640px) {
+    .container{
+        max-width: 90%;
+    }
+
+header {
+    padding-bottom: 12px;;
+    background-color: #182C61;
+    color: #ecf0f1;
+}   
+
+header h1{
+    font-size: 30px;
+}
+
+header nav li a {
+    display: flex;
+    margin-left: 16px;
+    font-size: 13px;
+}
+.store-front{
+    height: 240px;
+    width:370px;
+    margin-bottom: 8px;
+}
+
+#about .container{
+    display: block;
+}
+
+.tenis ul{
+    display: block;
+}
+
+#contact .contact-methods{
+    display: block;
+}
+
+.venha{
+    margin-top: 12px;
+}
+
+.nossos{
+    margin-left: 20px;
+}
+
+footer{
+    font-size: 12px;
+}
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .tenis ul{
+        flex-wrap: wrap;
+    }
+
+    .tenis li{
+        max-width: 40%
+    }
+
+    .tenis li img{
+        max-width: 100%;
+    }
+
+    .nossos{
+        margin-left: 40px;
+    }
+
+#contact .contact-methods{
+    display: block;
+}
+
+.store-front{
+    height: 540px;
+    width:630px;
+    margin-bottom: 8px;
+}
+
+.venha{
+    margin-top: 12px;
+}
+
+#about .container{
+    display: block;
+}
+
+}

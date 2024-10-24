@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Shop - A sua loja de Games</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tênis Shop</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">Sobre a loja</a>
+                </li>
+                <li>
+                    <a href="produtos">Nossos Produtos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <img class="store-front" src="./imgs/loja.jpeg" alt="Fachada da loja Game Shop">
+            <div class="sobre">
+                <h2>Sobre a loja</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id incidunt commodi eos veniam perferendis, nostrum labore harum ea excepturi corrupti amet totam possimus deserunt similique sequi ut, doloribus tempora. Officia?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem repudiandae aliquam, tempore eligendi adipisci beatae atque laboriosam eveniet unde expedita ullam corporis repellendus, voluptas modi natus minus, aut architecto.
+                </p>
+                <ul class="brands-list">
+                    <li><img src="./imgs/adidas.png" alt="Adidas"></li>
+                    <li><img src="./imgs/nike.png" alt="Nike"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="produtos">
+        <h2 class="nossos">Nossos Produtos</h2>
+        <div class="tenis container">
+            <ul>
+            <li>
+                <img src="./imgs/1632.jpg" alt="Tênis Camuflado Verde">
+            <h3>Tênis Camuflado Verde</h3>
+            <p>Tênis Camuflado Verde, disponível nos tamanhos 36, 40 e 41.</p>
+            <p>R$ 250,00</p>
+            <button type="button">Adicionar ao Carrinho</button>
+            </li>
+            <li>
+                <img src="./imgs/background-red-retro-model-tennis.jpg" alt="Tênis Vermelho">
+            <h3>Tênis Vermelho</h3>
+            <p>Tênis Vermelho, disponível nos tamanhos 35,36,39 e 40</p>
+            <p>R$ 200,00</p>
+            <button type="button">Adicionar ao Carrinho</button>
+            </li>
+            <li>
+                <img src="./imgs/black-fashion-gumshoes.jpg" alt="Sapato Cano Alto Spike">
+            <h3>Sapato Cano Alto Spike</h3>
+            <p>Sapato Cano Alto spike, disponível nos tamnhos 36,38,40 e 42</p>
+            <p>R$ 300,00</p>
+            <button type="button">Adicionar ao Carrinho</button>
+            </li>
+            <li>
+                <img src="./imgs/fashion-shoes-sneaker.jpg" alt="Sapato Holográfico Prata">
+            <h3>Sapato Holográfico Prata</h3>
+            <p>Sapato Holográfico Prata, disponível nos tamanhos 35,36,38 e 39</p>
+            <p>R$ 350,00</p>
+            <button type="button">Adicionar ao Carrinho</button>
+            </li>
+            </ul>
+        </div>
+    </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contato</h2>
+                <div class="contact-methods">
+                    <div class="fale">
+                        <h3>Fale Conosco</h3>
+                        <form>
+                            <input type="text" placeholder="Seu nome" required />
+                            <input type="email" placeholder="Seu e-mail" required />
+                            <input type="tel" placeholder="Seu telefone (opcional)" id="telefone" />
+                            <textarea placeholder="Sua mensagem" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="media">
+                        <h3>Nos Acompanhe</h3>
+                        <ul class="social-links">
+                            <li>
+                                <a href="#" title="Siga-nos no Instagram">
+                                    <img src="./imgs/instagram.png" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Siga-nos no Facebook">
+                                    <img src="./imgs/facebook.png" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Visite nosso canal no YouTube">
+                                    <img src="./imgs/youtube.png" alt="YouTube">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="venha">
+                        <h3>Venha até Nós</h3>
+                        <p>
+                            Rua dos Calçados N° 099, Vila do Olympikus - Minas Gerais/MG
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy;Tênis Shop - Todos os direitos reservados - 2024
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#telefone').mask('(00) 00000-0000',{
+                placeholder: '(**) *****-****'
+            })
+        })
+    </script>
+</body>
+</html>
