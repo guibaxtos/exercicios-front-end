@@ -1,0 +1,1 @@
+function soma(o,e){return o+e}console.log("A soma de 3 e 5 é:"+soma(8));
