@@ -31,28 +31,28 @@
         </div>
     </header>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() { //Essa linha registra um evento que será executado assim que o conteúdo do DOM (Document Object Model) da página for carregado completamente, ou seja, quando os elementos HTML estiverem prontos para serem manipulados pelo JavaScript.  Garantimos que o script só interaja com os elementos da página depois que eles existirem no DOM. Sem isso, o código poderia tentar acessar elementos HTML antes que eles fossem carregados, resultando em erros.
             const nameElement = document.querySelector('#name');
             const usernameElement = document.querySelector('#username');
-            const reposElement = document.querySelector('#repos');
+            const reposElement = document.querySelector('#repos');       //Busca no DOM o elemento HTML com o ID selecionado e armazena uma referência a ele na variável *Element
             const followersElement = document.querySelector('#followers');
             const followingElement = document.querySelector('#following');
             const linkElement = document.querySelector('#link');
 
-            fetch('https://api.github.com/users/guibaxtos')
-                .then(function(res) {
+            fetch('https://api.github.com/users/guibaxtos') //Usa a função fetch para fazer uma requisição HTTP GET para a API do GitHub. A URL especifica o endpoint para obter dados do usuário guibaxtos.
+                .then(function(res) {  
                     return res.json();
-                })
-                .then(function(json) {
-                    nameElement.innerText = json.name;
-                    usernameElement.innerText = `@${json.login}`;
-                    reposElement.innerText = json.public_repos;
+                }) //Processa a resposta da API (res) e converte os dados recebidos de JSON para um objeto JavaScript. A função res.json() retorna uma Promise que será resolvida com os dados.
+                .then(function(json) { // Recebe os dados convertidos para um objeto JavaScript (json) e os utiliza para preencher os elementos HTML com informações do perfil do usuário.
+                    nameElement.innerText = json.name; //Insere o valor da propriedade name do objeto json no elemento HTML representado por nameElement.
+                    usernameElement.innerText = `@${json.login}`; //Insere o valor de json.login (o nome de usuário do GitHub) no elemento usernameElement, formatando-o com um @ antes.
+                    reposElement.innerText = json.public_repos; //Insere o número de repositórios públicos (json.public_repos) no elemento reposElement.
                     followersElement.innerText = json.followers;
                     followingElement.innerText = json.following;
                     linkElement.href = json.html_url;
                 })
                 .catch(function(error) {
-                    console.error('Erro ao buscar dados do GitHub:', error);
+                    console.error('Erro ao buscar dados do GitHub:', error); //Captura e trata qualquer erro que possa ocorrer durante o processo de requisição ou manipulação dos dados.Mostra uma mensagem de erro no console caso algo dê errado.
                 });
         });
     </script>
